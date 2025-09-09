@@ -35,7 +35,7 @@ const Navbar = () => {
         {/* Left-Logo */}
         <div>
           <Link to="/" className="text-2xl font-medium">
-            HappyCart😃
+           ShopFusion🛒
           </Link>
         </div>
         {/* Center -Navigation Links */}

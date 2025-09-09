@@ -18,6 +18,9 @@ import ProductManagement from "./components/Admin/ProductManagement";
 import EditProductPage from "./components/Admin/EditProductPage";
 import OrderManagement from "./components/Admin/OrderManagement";
 
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import { Provider } from "react-redux";
 import store from "./redux/store";
 import ProtectedRoute from "./components/Common/ProtectedRoute";
@@ -26,7 +29,11 @@ const App = () => {
   return (
     <Provider store={store}>
       <BrowserRouter>
+        {/* Sonner Toaster */}
         <Toaster position="top-right" />
+        {/* React Toastify Toaster */}
+        <ToastContainer position="top-right" autoClose={3000} theme="colored" />
+
         <Routes>
           {/* User Layout */}
           <Route path="/" element={<UserLayout />}>
